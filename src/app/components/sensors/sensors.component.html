@@ -1,0 +1,3 @@
+<div *ngFor="let sensor of sensors | async">
+    <a [routerLink]="['/sensors', sensor.Id]">{{sensor.name}}</a>
+</div>

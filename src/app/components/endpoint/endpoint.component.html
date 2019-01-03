@@ -1,0 +1,6 @@
+<div>Configuration</div>
+<app-configuration [configuration]="configuration"></app-configuration>
+<div *ngFor="let reading of readings | async">
+    <app-reading [reading]=reading></app-reading>
+    <div>-------</div>
+</div>
